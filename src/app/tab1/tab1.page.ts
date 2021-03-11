@@ -7,6 +7,19 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
+  public today = Date.now();
+
+  public name = "Billy Bob";
+
+  public items = ["Shirts", "Pants", "Socks", "Shoes", "Ties"];
+
+  public stuff = ["Shirt", "Pant", "Sock", "Shoe", "Tie"];
+
   constructor() {}
 
+
+
+  itemSelected(item : any){
+    
+  }
 }

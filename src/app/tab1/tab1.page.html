@@ -1,7 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+    <!-- <ion-title color="secondary"> -->
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,8 +11,107 @@
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
+    </ion-toolbar> 
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
+  <ion-list>
+    <ion-item><ion-label>Item 1</ion-label></ion-item>
+    <ion-item><ion-label>Item 2</ion-label></ion-item>
+    <ion-item><ion-label>Item 3</ion-label></ion-item>
+    <!-- <ion-item><ion-label class="color">Item 1</ion-label></ion-item>
+    <ion-item><ion-label class="color">Item 2</ion-label></ion-item>
+    <ion-item><ion-label class="color">Item 3</ion-label></ion-item> -->
+  </ion-list>
+  
+
+
+  <ion-list>
+  <!-- <ion-list lines="none"> -->
+    <ion-item *ngFor="let item of stuff">
+          <ion-label>{{item}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  
+
+
+  <!-- <ion-list>
+    <ion-item *ngFor="let item of items"
+            (click)="itemSelected(item)">
+          <ion-label>{{item}}</ion-label>
+    </ion-item>
+  </ion-list> -->
+  
+
+
+
+  <!-- <ion-slides>
+    <ion-slide>
+      <h2>Slide 1</h2>
+    </ion-slide>
+    <ion-slide>
+      <h2>Slide 2</h2>
+    </ion-slide>
+    <ion-slide>
+      <h2>Slide 3</h2>
+    </ion-slide>
+  </ion-slides> -->
+
+
+
+
+  <ion-list>
+    <ion-item>
+    <!-- <ion-item class="inline"> -->
+      <ion-label>Username</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+    <!-- <ion-item class="inline"> -->
+      <ion-label>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+
+  <!-- <ion-row>
+    <ion-col>Hi</ion-col>
+    <ion-col>There</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>What</ion-col>
+    <ion-col>is</ion-col>
+    <ion-col>it?</ion-col>
+  </ion-row> -->
+
+
+
+  <!-- <ion-row>
+    <ion-col size="3">Nothing</ion-col>
+    <ion-col size="6">Just</ion-col>
+    <ion-col size="2">Saying</ion-col>
+    <ion-col size="1">Hi</ion-col>
+  </ion-row> -->
+
+
+
+  <ion-icon name="heart"></ion-icon>
+  <!-- <ion-icon color="secondary" name="heart"></ion-icon> -->
+
+
+  <!-- <p>Todays date is {{ today }}</p>
+  <p>Todays date using date short is {{ today | date : 'short' }}</p>
+
+  <p>Todays date using date medium is {{ today | date : 'medium' }}</p>
+  <p>Todays date using shortDate is {{ today | date : 'shortDate' }}</p>
+  <p>Todays date using mediumDate is {{ today | date : 'mediumDate' }}</p>
+  <p>Todays date using fullDate is {{ today | date : 'fullDate' }}</p>
+  <p>Todays date using fullDate is {{ today | date : 'fullDate' | uppercase}}</p>
+  <p>Todays date using longDate is {{ today | date : 'longDate' }}</p>
+  <p>The time using shortTime is {{ today | date : 'shortTime' }}</p>
+  <p>The time using mediumTime is {{ today | date : 'mediumTime' }}</p> -->
+  <!-- <p>{{ name | myPipe }}</p> -->
+
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 </ion-content>
